@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tasks Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the AI Tasks Web App</h1>
+
+        <!-- FAQ Task -->
+        <form action="/faq" method="POST">
+            <h2>FAQ Task</h2>
+            <label for="question">Ask a Question:</label>
+            <input type="text" id="question" name="question" required>
+            <button type="submit">Get Answer</button>
+        </form>
+
+        <!-- Content Summarizer -->
+        <form action="/summarize" method="POST">
+            <h2>Summarize Content</h2>
+            <label for="text">Enter Text to Summarize:</label>
+            <textarea id="text" name="text" rows="4" required></textarea>
+            <button type="submit">Summarize</button>
+        </form>
+
+        <!-- Daily Journal Reflection -->
+        <form action="/journal" method="POST">
+            <h2>Daily Journal Reflection</h2>
+            <label for="journal_entry">Your Journal Entry:</label>
+            <textarea id="journal_entry" name="journal_entry" rows="4" required></textarea>
+            <button type="submit">Generate Reflection</button>
+        </form>
+
+        <!-- Idea Generator -->
+        <form action="/generate_idea" method="POST">
+            <h2>Idea Generator</h2>
+            <label for="topic">Enter Topic or Keyword:</label>
+            <input type="text" id="topic" name="topic" required>
+            <button type="submit">Generate Ideas</button>
+        </form>
+
+        <!-- Email Reply Generator -->
+        <form action="/generate_email_reply" method="POST">
+            <h2>Email Reply Generator</h2>
+            <label for="email_content">Enter Email Content:</label>
+            <textarea id="email_content" name="email_content" rows="4" required></textarea>
+            <button type="submit">Generate Reply</button>
+        </form>
+
+        <!-- Code Snippet Generator -->
+        <form action="/generate_code" method="POST">
+            <h2>Code Snippet Generator</h2>
+            <label for="code_task">Enter Programming Task or Question:</label>
+            <input type="text" id="code_task" name="code_task" required>
+            <button type="submit">Generate Code</button>
+        </form>
+
+        <!-- Blog Generator -->
+        <form action="/generate_blog" method="POST">
+            <h2>Keyword-Based Blog Generator</h2>
+            <label for="keywords">Enter Keywords or Topics:</label>
+            <input type="text" id="keywords" name="keywords" required>
+            <button type="submit">Generate Blog</button>
+        </form>
+
+        <!-- Quiz Generator -->
+        <form action="/generate_quiz" method="POST">
+            <h2>AI-Based Quiz Generator</h2>
+            <label for="quiz_topic">Enter Topic:</label>
+            <input type="text" id="quiz_topic" name="quiz_topic" required>
+            <button type="submit">Generate Quiz</button>
+        </form>
+
+        <!-- Sentiment Analysis -->
+        <form action="/analyze_sentiment" method="POST">
+            <h2>Sentiment Analysis Tool</h2>
+            <label for="text_analysis">Enter Text for Sentiment Analysis:</label>
+            <textarea id="text_analysis" name="text_analysis" rows="4" required></textarea>
+            <button type="submit">Analyze Sentiment</button>
+        </form>
+
+        <!-- Product Review Summarizer -->
+        <form action="/summarize_reviews" method="POST">
+            <h2>Product Review Summarizer</h2>
+            <label for="reviews">Enter Product Reviews:</label>
+            <textarea id="reviews" name="reviews" rows="4" required></textarea>
+            <button type="submit">Summarize Reviews</button>
+        </form>
+
+        <!-- Chapter Generator -->
+        <form action="/generate_chapter" method="POST">
+            <h2>Chapter Generator for Course Creation</h2>
+            <label for="course_description">Course Description:</label>
+            <input type="text" id="course_description" name="course_description" required>
+            <label for="course_subject">Course Subject:</label>
+            <input type="text" id="course_subject" name="course_subject" required>
+            <label for="course_level">Course Level (Beginner/Intermediate/Advanced):</label>
+            <input type="text" id="course_level" name="course_level" required>
+            <button type="submit">Generate Table of Contents</button>
+        </form>
+
+    </div>
+</body>
+</html>
