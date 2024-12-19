@@ -34,7 +34,7 @@ Welcome to the **AI Task Web App**! This web application provides a suite of AI-
 
 ## Project Structure
 ```
-project_folder/
+AI Task Web App/
 │
 ├── app.py                # Python Flask application
 ├── templates/            # Folder for HTML templates
